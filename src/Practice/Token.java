@@ -8,21 +8,17 @@ public class Token {
 	
 	public static void main(String[] args)
 	{
-		String str="helloeveryone";
-		int v=0,c=0;
-		for(int i=0;i<str.length();i++)
+		String str="welcome to java";
+		char[] c=str.toCharArray();
+		for(int i=c.length-1;i>=0;i--)
 		{
-			char ch=str.charAt(i);
-			if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
-			{
-				v++;
-			}
-			else
-				c++;
+			System.out.print(c[i]);
 		}
 
-		System.out.println("Vowels= "+v);
-		System.out.println("consonents= "+c);
+			
+
+			
+	
 	}
 }
 
